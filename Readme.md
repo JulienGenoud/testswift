@@ -2,5 +2,4 @@
 - install : https://swift.org/download/
 
     swift build
-    .build/debug/miniswiftshell
-    $
+    .build/debug/testswift
