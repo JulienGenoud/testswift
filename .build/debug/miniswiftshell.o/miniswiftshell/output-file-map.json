@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/miniswiftshell/master.swiftdeps"
+  },
+  "/Users/juliengenoud/Workspace/miniswiftshell/Sources/Input.swift": {
+    "dependencies": "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/miniswiftshell/Input.d",
+    "object": "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/Input.swift.o",
+    "swiftmodule": "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/miniswiftshell/Input~partial.swiftmodule",
+    "swift-dependencies": "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/miniswiftshell/Input.swiftdeps"
+  },
+  "/Users/juliengenoud/Workspace/miniswiftshell/Sources/main.swift": {
+    "dependencies": "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/miniswiftshell/main.d",
+    "object": "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/main.swift.o",
+    "swiftmodule": "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/miniswiftshell/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/miniswiftshell/main.swiftdeps"
+  }
+}

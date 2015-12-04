@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.2-dev (LLVM 46be9ff861, Clang 4deb154edc, Swift 778f82939c)"
+options: "947946dd0250fbe5fdcf3ccbc6575870"
+build_time: [502533078, 578940000]
+inputs:
+  "/Users/juliengenoud/Workspace/miniswiftshell/Sources/Input.swift": [502532784, 0]
+  "/Users/juliengenoud/Workspace/miniswiftshell/Sources/main.swift": [502533074, 0]

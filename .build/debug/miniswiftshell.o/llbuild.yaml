@@ -1,0 +1,29 @@
+client:
+  name: swift-build
+
+tools: {}
+
+targets:
+  "": [<miniswiftshell>]
+  miniswiftshell: [<miniswiftshell>]
+
+commands:
+  <miniswiftshell-swiftc>:
+    tool: swift-compiler
+    executable: "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-01-a.xctoolchain/usr/bin/swiftc"
+    inputs: ["/Users/juliengenoud/Workspace/miniswiftshell/Sources/Input.swift","/Users/juliengenoud/Workspace/miniswiftshell/Sources/main.swift"]
+    outputs: ["<miniswiftshell-swiftc>","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.swiftmodule","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/Input.swift.o","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/main.swift.o"]
+    module-name: "miniswiftshell"
+    module-output-path: "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.swiftmodule"
+    is-library: false
+    sources: ["/Users/juliengenoud/Workspace/miniswiftshell/Sources/Input.swift","/Users/juliengenoud/Workspace/miniswiftshell/Sources/main.swift"]
+    objects: ["/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/Input.swift.o","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/main.swift.o"]
+    import-paths: ["/Users/juliengenoud/Workspace/miniswiftshell/.build/debug"]
+    temps-path: "/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/miniswiftshell"
+    other-args: ["-j8","-Onone","-g","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-I","/usr/local/include"]
+  <miniswiftshell>:
+    tool: shell
+    inputs: ["<miniswiftshell-swiftc>","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/Input.swift.o","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/main.swift.o"]
+    outputs: ["<miniswiftshell>","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell"]
+    args: ["/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-01-a.xctoolchain/usr/bin/swiftc","-o","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/Input.swift.o","/Users/juliengenoud/Workspace/miniswiftshell/.build/debug/miniswiftshell.o/Sources/main.swift.o","-Xlinker","-all_load","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-L/usr/local/lib"]
+    description: "Linking Executable:  .build/debug/miniswiftshell"
