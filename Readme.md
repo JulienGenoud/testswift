@@ -1,6 +1,6 @@
-#Swift 2.2 required
-install : https://swift.org/download/
+- Swift 2.2 required
+- install : https://swift.org/download/
 
-  swift build
-  .build/debug/miniswiftshell
-  $
+    swift build
+    .build/debug/miniswiftshell
+    $
